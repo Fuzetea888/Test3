@@ -1,0 +1,33 @@
+{
+  "name": "@complianceos/types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript types for ComplianceOS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@complianceos/eslint-config": "workspace:*",
+    "@complianceos/typescript-config": "workspace:*",
+    "@types/node": "^20.10.6",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
