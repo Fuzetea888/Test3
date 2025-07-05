@@ -20,7 +20,7 @@ ComplianceOS represents the pinnacle of compliance management technology, design
 ### 🎯 **Industry-Leading Features**
 
 #### **🤖 AI-Powered Compliance Intelligence**
-- **GPT-4 Integration**: Natural language compliance queries and automated policy interpretation
+- **Llama 3.1 Nemotron Ultra Integration**: Natural language compliance queries and automated policy interpretation
 - **Predictive Risk Analysis**: ML algorithms that predict compliance risks before they occur
 - **Intelligent Automation**: 60% reduction in manual compliance tasks through smart workflows
 - **Real-time Regulatory Monitoring**: AI monitors 50,000+ regulatory sources globally
@@ -168,8 +168,8 @@ GOOGLE_CLIENT_SECRET=your-google-client-secret
 # =============================================================================
 # AI & MACHINE LEARNING
 # =============================================================================
-OPENAI_API_KEY=your-openai-api-key
-ANTHROPIC_API_KEY=your-anthropic-api-key
+NVIDIA_API_KEY=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
+# Free Llama 3.1 Nemotron Ultra - No additional API keys needed!
 
 # =============================================================================
 # EXTERNAL SERVICES
@@ -291,7 +291,7 @@ docker-compose up -d
 ### **vs. Traditional Compliance Tools**
 | Feature | ComplianceOS | Traditional Tools |
 |---------|-------------|-------------------|
-| AI Integration | ✅ Advanced GPT-4 | ❌ None/Basic |
+| AI Integration | ✅ Advanced Llama 3.1 Nemotron Ultra | ❌ None/Basic |
 | Real-time Monitoring | ✅ Live Updates | ❌ Batch Processing |
 | Predictive Analytics | ✅ ML-Powered | ❌ Reactive Only |
 | API-First Design | ✅ 200+ Integrations | ❌ Limited APIs |
