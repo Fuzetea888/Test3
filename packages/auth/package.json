@@ -1,0 +1,52 @@
+{
+  "name": "@complianceos/auth",
+  "version": "1.0.0",
+  "description": "Enterprise authentication package for ComplianceOS with NextAuth, Supabase, and MFA",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx --fix",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@complianceos/types": "workspace:*",
+    "@supabase/supabase-js": "^2.38.5",
+    "next-auth": "^4.24.5",
+    "jose": "^5.2.0",
+    "bcryptjs": "^2.4.3",
+    "otplib": "^12.0.1",
+    "qrcode": "^1.5.3",
+    "crypto": "^1.0.1",
+    "speakeasy": "^2.0.0",
+    "rate-limiter-flexible": "^4.0.1",
+    "ua-parser-js": "^1.0.37",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@complianceos/eslint-config": "workspace:*",
+    "@complianceos/typescript-config": "workspace:*",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.10.6",
+    "@types/qrcode": "^1.5.5",
+    "@types/speakeasy": "^2.0.10",
+    "@types/ua-parser-js": "^0.7.39",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "next": "^14.0.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}

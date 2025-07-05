@@ -1,0 +1,44 @@
+{
+  "name": "@complianceos/database",
+  "version": "1.0.0",
+  "description": "Database schema and migrations for ComplianceOS with Supabase",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "supabase"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "generate": "supabase gen types typescript --local > src/supabase.ts",
+    "migrate": "supabase db push",
+    "reset": "supabase db reset",
+    "seed": "supabase db seed",
+    "start": "supabase start",
+    "stop": "supabase stop",
+    "status": "supabase status"
+  },
+  "dependencies": {
+    "@complianceos/types": "workspace:*",
+    "@supabase/supabase-js": "^2.38.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@complianceos/eslint-config": "workspace:*",
+    "@complianceos/typescript-config": "workspace:*",
+    "@types/node": "^20.10.6",
+    "eslint": "^8.56.0",
+    "supabase": "^1.127.4",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
