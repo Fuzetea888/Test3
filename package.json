@@ -77,7 +77,40 @@
     "validate:top-0.1-percent": "npm run test:all-advanced && npm run benchmark:performance && npm run analyze:compliance && npm run verify",
     "enterprise:health": "npm run system:health && npm run monitor:real-time --check && npm run benchmark:performance --quick",
     "enterprise:deploy": "npm run validate:top-0.1-percent && npm run build && npm run start",
-    "ci:full-suite": "npm run test:all-advanced && npm run verify && npm run audit:security && npm run benchmark:performance"
+    "ci:full-suite": "npm run test:all-advanced && npm run verify && npm run audit:security && npm run benchmark:performance",
+    
+    "test:ultimate-top-0.1-percent": "node scripts/ultimate-top-0.1-percent-testing-suite.js",
+    "test:chaos-engineering": "node scripts/enterprise-chaos-testing.js",
+    "test:ai-model-validation": "node scripts/ai-model-accuracy-validator.js",
+    "test:disaster-recovery": "node scripts/disaster-recovery-stress-test.js",
+    
+    "test:chaos-full": "node scripts/enterprise-chaos-testing.js --full",
+    "test:chaos-quick": "node scripts/enterprise-chaos-testing.js --quick",
+    "test:chaos-extreme": "node scripts/enterprise-chaos-testing.js --extreme",
+    "test:chaos-security": "node scripts/enterprise-chaos-testing.js --security-only",
+    "test:chaos-network": "node scripts/enterprise-chaos-testing.js --chaos-only",
+    
+    "validate:ai-models": "node scripts/ai-model-accuracy-validator.js",
+    "validate:ai-risk-prediction": "node scripts/ai-model-accuracy-validator.js --risk-prediction",
+    "validate:ai-compliance-scoring": "node scripts/ai-model-accuracy-validator.js --compliance-scoring",
+    "validate:ai-computer-vision": "node scripts/ai-model-accuracy-validator.js --computer-vision",
+    "validate:ai-document-analysis": "node scripts/ai-model-accuracy-validator.js --document-analysis",
+    
+    "test:disaster-recovery-full": "node scripts/disaster-recovery-stress-test.js --full",
+    "test:disaster-recovery-infrastructure": "node scripts/disaster-recovery-stress-test.js --infrastructure",
+    "test:disaster-recovery-database": "node scripts/disaster-recovery-stress-test.js --database",
+    "test:disaster-recovery-cyber-attacks": "node scripts/disaster-recovery-stress-test.js --cyber-attacks",
+    "test:disaster-recovery-backup-systems": "node scripts/disaster-recovery-stress-test.js --backup-systems",
+    
+    "run:top-0.1-percent-certification": "npm run test:ultimate-top-0.1-percent",
+    "run:enterprise-grade-validation": "npm run test:chaos-engineering && npm run test:ai-model-validation && npm run test:disaster-recovery",
+    "run:comprehensive-testing-suite": "npm run test:ultimate-top-0.1-percent",
+    
+    "generate:certification-report": "node scripts/ultimate-top-0.1-percent-testing-suite.js --report-only",
+    "generate:performance-report": "node scripts/performance-benchmarks.js --detailed",
+    "generate:security-report": "node scripts/enterprise-chaos-testing.js --security-report",
+    "generate:ai-validation-report": "node scripts/ai-model-accuracy-validator.js --report-only",
+    "generate:disaster-recovery-report": "node scripts/disaster-recovery-stress-test.js --report-only"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
