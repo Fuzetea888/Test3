@@ -7,9 +7,12 @@
 // CONFIGURATION
 // =============================================================================
 
+// NOTE: Les appels AI doivent passer par notre API backend pour la sécurité
+// Les clés API ne doivent jamais être exposées côté client
+
 const AI_CONFIG = {
-  apiKey: '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',
-  baseURL: 'https://integrate.api.nvidia.com/v1',
+  // Utilise notre API backend au lieu d'appeler directement NVIDIA
+  baseURL: '/api/ai',
   model: 'nvidia/llama-3_1-nemotron-ultra-253b-v1',
   maxTokens: 4096,
   temperature: 0.7,

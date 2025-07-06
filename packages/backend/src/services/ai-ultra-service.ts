@@ -111,7 +111,7 @@ interface DocumentProcessingResult {
 @injectable()
 @singleton()
 export class AIUltraService extends EventEmitter {
-  private readonly API_KEY = process.env.NVIDIA_API_KEY || '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';
+  private readonly API_KEY = process.env.NVIDIA_API_KEY;
   private readonly API_URL = 'https://integrate.api.nvidia.com/v1/chat/completions';
   private readonly MODEL = 'meta/llama-3.1-nemotron-70b-instruct';
   

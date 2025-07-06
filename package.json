@@ -37,6 +37,9 @@
     "demo:ai": "node test-top-0.1-percent-features.js",
     "demo:features": "node -e \"console.log('🚀 ComplianceOS - TOP 0.1% FEATURES'); console.log('🤖 Llama 3.1 Nemotron Ultra: ACTIVE'); console.log('👁️ Computer Vision: OPERATIONAL'); console.log('🔧 Workflow Builder: READY'); console.log('💰 ROI Calculator: LIVE'); console.log('� Smart Notifications: ENABLED'); console.log('📊 Advanced Analytics: RUNNING'); console.log('💎 Excellence confirmed - Ready for enterprise!');\"",
     "quick-start": "echo '🚀 Starting ComplianceOS Top 0.1% Platform...' && pnpm start",
+    "restart": "pnpm run clean && pnpm install && pnpm start",
+    "stop": "docker-compose down && pkill -f 'pnpm.*dev'",
+    "check-config": "node -e \"console.log('🔍 Checking configuration...'); const fs = require('fs'); if (fs.existsSync('.env')) { console.log('✅ .env file found'); } else { console.log('❌ .env file missing - copy from .env.example'); process.exit(1); }\"",
     "production": "pnpm run build && pnpm run start:prod",
     "start:prod": "concurrently \"pnpm --filter web start\" \"pnpm --filter backend start\" --names \"WEB,API\" --prefix-colors \"cyan,yellow\""
   },
