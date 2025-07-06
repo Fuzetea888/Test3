@@ -34,7 +34,7 @@ services:
   # Backend API
   api:
     build:
-      context: ./apps/api
+      context: ./packages/backend
       dockerfile: Dockerfile.dev
     container_name: complianceos-api
     ports:
@@ -47,7 +47,7 @@ services:
       - SUPABASE_SERVICE_KEY=${SUPABASE_SERVICE_KEY}
       - REDIS_URL=redis://redis:6379
       - JWT_SECRET=${JWT_SECRET}
-      - NVIDIA_API_KEY=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
+      - NVIDIA_API_KEY=${NVIDIA_API_KEY}
       - STRIPE_SECRET_KEY=${STRIPE_SECRET_KEY}
       - RESEND_API_KEY=${RESEND_API_KEY}
       - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
@@ -57,7 +57,7 @@ services:
     depends_on:
       - redis
     volumes:
-      - ./apps/api:/app
+      - ./packages/backend:/app
       - /app/node_modules
     restart: unless-stopped
     networks:
