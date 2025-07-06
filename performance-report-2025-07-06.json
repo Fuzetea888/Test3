@@ -1,0 +1,224 @@
+{
+  "timestamp": "2025-07-06T16:00:45.822Z",
+  "duration": 16818,
+  "results": {
+    "apiPerformance": [
+      {
+        "endpoint": "Health Check",
+        "averageTime": 98,
+        "minTime": 57,
+        "maxTime": 140,
+        "status": "EXCELLENT"
+      },
+      {
+        "endpoint": "Compliance Assessment",
+        "averageTime": 97,
+        "minTime": 54,
+        "maxTime": 141,
+        "status": "EXCELLENT"
+      },
+      {
+        "endpoint": "Risk Analysis",
+        "averageTime": 91,
+        "minTime": 58,
+        "maxTime": 148,
+        "status": "EXCELLENT"
+      },
+      {
+        "endpoint": "AI Insights",
+        "averageTime": 94,
+        "minTime": 62,
+        "maxTime": 148,
+        "status": "EXCELLENT"
+      },
+      {
+        "endpoint": "Dashboard Data",
+        "averageTime": 105,
+        "minTime": 55,
+        "maxTime": 146,
+        "status": "EXCELLENT"
+      }
+    ],
+    "databasePerformance": [
+      {
+        "operation": "SELECT Query",
+        "duration": 18,
+        "complexity": "simple",
+        "status": "EXCELLENT"
+      },
+      {
+        "operation": "JOIN Query",
+        "duration": 32,
+        "complexity": "medium",
+        "status": "EXCELLENT"
+      },
+      {
+        "operation": "Aggregation Query",
+        "duration": 59,
+        "complexity": "complex",
+        "status": "GOOD"
+      },
+      {
+        "operation": "INSERT Operation",
+        "duration": 25,
+        "complexity": "simple",
+        "status": "EXCELLENT"
+      },
+      {
+        "operation": "UPDATE Operation",
+        "duration": 38,
+        "complexity": "medium",
+        "status": "EXCELLENT"
+      }
+    ],
+    "aiPerformance": [
+      {
+        "task": "Risk Assessment",
+        "duration": 896,
+        "expectedTime": 2000,
+        "efficiency": 223,
+        "status": "EXCELLENT"
+      },
+      {
+        "task": "Document Analysis",
+        "duration": 1833,
+        "expectedTime": 3000,
+        "efficiency": 164,
+        "status": "EXCELLENT"
+      },
+      {
+        "task": "Computer Vision",
+        "duration": 2119,
+        "expectedTime": 4000,
+        "efficiency": 189,
+        "status": "EXCELLENT"
+      },
+      {
+        "task": "Compliance Gap Analysis",
+        "duration": 1110,
+        "expectedTime": 2500,
+        "efficiency": 225,
+        "status": "EXCELLENT"
+      },
+      {
+        "task": "Predictive Analytics",
+        "duration": 1294,
+        "expectedTime": 3500,
+        "efficiency": 270,
+        "status": "EXCELLENT"
+      }
+    ],
+    "concurrentUsers": [
+      {
+        "userCount": 10,
+        "successRate": 100,
+        "averageResponseTime": 274,
+        "totalDuration": 294,
+        "status": "EXCELLENT"
+      },
+      {
+        "userCount": 50,
+        "successRate": 100,
+        "averageResponseTime": 269,
+        "totalDuration": 296,
+        "status": "EXCELLENT"
+      },
+      {
+        "userCount": 100,
+        "successRate": 100,
+        "averageResponseTime": 232,
+        "totalDuration": 298,
+        "status": "EXCELLENT"
+      },
+      {
+        "userCount": 250,
+        "successRate": 100,
+        "averageResponseTime": 240,
+        "totalDuration": 297,
+        "status": "EXCELLENT"
+      },
+      {
+        "userCount": 500,
+        "successRate": 100,
+        "averageResponseTime": 257,
+        "totalDuration": 297,
+        "status": "EXCELLENT"
+      },
+      {
+        "userCount": 1000,
+        "successRate": 100,
+        "averageResponseTime": 249,
+        "totalDuration": 299,
+        "status": "EXCELLENT"
+      }
+    ],
+    "dataProcessing": [
+      {
+        "dataset": "1K Records",
+        "size": 1000,
+        "duration": 376,
+        "recordsPerSecond": 2660,
+        "status": "GOOD"
+      },
+      {
+        "dataset": "10K Records",
+        "size": 10000,
+        "duration": 548,
+        "recordsPerSecond": 18248,
+        "status": "EXCELLENT"
+      },
+      {
+        "dataset": "100K Records",
+        "size": 100000,
+        "duration": 619,
+        "recordsPerSecond": 161551,
+        "status": "EXCELLENT"
+      },
+      {
+        "dataset": "1M Records",
+        "size": 1000000,
+        "duration": 699,
+        "recordsPerSecond": 1430615,
+        "status": "EXCELLENT"
+      }
+    ],
+    "memoryUsage": [
+      {
+        "operation": "Large Dataset Loading",
+        "memoryUsage": 0.05,
+        "heapUsed": 5,
+        "status": "EXCELLENT"
+      },
+      {
+        "operation": "AI Model Processing",
+        "memoryUsage": 0.03,
+        "heapUsed": 5,
+        "status": "EXCELLENT"
+      },
+      {
+        "operation": "Complex Calculations",
+        "memoryUsage": 0.01,
+        "heapUsed": 5,
+        "status": "EXCELLENT"
+      },
+      {
+        "operation": "Image Processing",
+        "memoryUsage": 0.04,
+        "heapUsed": 5,
+        "status": "EXCELLENT"
+      },
+      {
+        "operation": "Report Generation",
+        "memoryUsage": -0.46,
+        "heapUsed": 4,
+        "status": "EXCELLENT"
+      }
+    ]
+  },
+  "scores": {
+    "api": 51.5,
+    "database": 31.200000000000003,
+    "ai": 214.2,
+    "overall": 99
+  }
+}
